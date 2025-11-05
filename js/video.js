@@ -38,7 +38,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip Video")
-	video.currentTime += 15;
+	video.currentTime += 10;
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
