@@ -37,8 +37,13 @@ document.querySelector("#faster").addEventListener("click", function() {
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-	console.log("Skip Video")
-	video.currentTime += 10;
+	console.log("Skip video")
+	if (video.currentTime + 10 > video.duration) {
+		video.currentTime = 0
+	}
+	else {
+		video.currentTime += 10;
+	}
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
